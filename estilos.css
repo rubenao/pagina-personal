@@ -283,7 +283,7 @@ section {
     }
 }
 
-@media (width <= 576px){
+@media (width < 576px){
     html {
         font-size: 14px;
     }
