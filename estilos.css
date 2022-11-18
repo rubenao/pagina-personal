@@ -255,14 +255,14 @@ section {
 /* MEDIA QUERIES*/
 
 
-@media (width<=1130px){
+@media (max-width:1130px){
     html {
         font-size: 15px;
     }
 }
 
 
-@media (width <= 992px){
+@media (max-width :992px){
     html {
         font-size: 14.8px;
     }
@@ -283,7 +283,7 @@ section {
     }
 }
 
-@media (width < 576px){
+@media (max-width : 576px){
     html {
         font-size: 14px;
     }
