@@ -23,6 +23,7 @@ nav {
     justify-content: center;
     border-bottom: 1px solid var(--negro);
     background-color: white;
+    z-index: 2;
 }
 
 .nav-bar {

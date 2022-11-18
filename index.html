@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="/Assets/Img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
    
 </head>
 <body>
@@ -31,7 +32,7 @@
     
 
     <div class="hero">
-        <div class="descripcion">
+        <div class="descripcion" data-aos="fade-right" data-aos-duration="1000">
             <h1 class="nombre">Rubén
                 Alvarado
             </h1>
@@ -42,12 +43,12 @@
 
             <a href="#" class="call-to-action">Trabajemos juntos!</a>
         </div>
-        <div class="img-explanada">
+        <div class="img-explanada" data-aos="zoom-in" data-aos-duration="1000">
             <img src="/Assets/Img/foto-perfil.jpg" alt="imagen de perfil" class="imagen-explanada">
         </div>
     </div>
 
-    <section>
+    <section data-aos="fade-up" data-aos-duration="1000">
         <h2 class="section-titulo">
             Proyectos
         </h2>
@@ -75,7 +76,7 @@
         </div>
     </section>
 
-    <section>
+    <section data-aos="fade-right" data-aos-duration="1000">
         <h2 class="section-titulo">
             Servicios
         </h2>
@@ -120,6 +121,11 @@
         
 
     </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+     </script>
 
   
 </body>
