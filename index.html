@@ -21,9 +21,13 @@
                     <img src="/Assets/Img/rubén.png" alt="logo" class="img-logo">
                 </a>
             </div>
+
+            <div class="hamburger">
+            </div>
             <div class="links">
                 <ul>
                     <li><a href="/acerca-de-mi.html">Acerca de mi</a></li>
+                    <li><a href="/acerca-de-mi.html">Cursos</a></li>
                 </ul>
             </div>
         </div>
@@ -125,7 +129,15 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
-     </script>
+    </script>
+    <script>
+        const hamburger = document.querySelector('.hamburger')
+
+        hamburger.addEventListener('click', ()=>{
+            document.body.classList.toggle('active')
+        })
+
+    </script>
 
   
 </body>

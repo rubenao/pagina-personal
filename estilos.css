@@ -39,10 +39,12 @@ nav {
 .links ul {
     display: flex;
     justify-content: flex-end;
+    gap: 15px;
 }
 
 .links li {
     list-style: none;
+
 }
 
 .links a{
@@ -80,19 +82,20 @@ nav {
 
 }
 
-.links li {
+.links a {
     border-radius: 10px;
     background-color: white;
     border: 1px solid black;
     /*box-shadow: 8px 6px rgba(0, 0, 0, 0.938) ;*/
     font-weight: 700;
-    padding: 10px 25px;
-    transition: box-shadow 0.3s ease;
+    padding: 8px 25px;
+    transition: all 0.3s ease;
 }
 
-.links li:hover {
-    transform: translate(-8px, -6px);
-    box-shadow: 8px 6px rgba(0, 0, 0, 0.938) ;
+.links a:hover {
+    
+    background-color: var(--negro);
+    color: white;
 
 }
 
@@ -110,13 +113,14 @@ nav {
     border-radius: 10px;
     background-color: white;
     border: 1px solid black;
-    box-shadow: 8px 6px rgba(0, 0, 0, 0.938) ;
+    /*box-shadow: 8px 6px rgba(0, 0, 0, 0.938) ;*/
     width: 200px;
     display: inline-block;
     text-decoration: none;
     color: var(--negro);
     font-weight: 700;
     transition: 0.3s all ease;
+    text-align: center;
 }
 
 .call-to-action:hover {
@@ -353,7 +357,74 @@ section {
         flex-direction: column;
 
     }
+
+    .hamburger {
+        background-image: url('/Assets/Img/bars-solid.svg');
+        background-repeat: no-repeat;
+        display: grid;
+        object-fit: cover;
+        background-position: 50% 50%;
+        transform: scale(0.35);
+        width: 70px;
+        height: 70px;
+        transition: 0.3s all ease;
+    }
+
+    body.active .hamburger {
+        background-image: url('/Assets/Img/xmark-solid.svg');
+        background-repeat: no-repeat;
+        display: grid;
+        object-fit: cover;
+        background-position: 50% 50%;
+        transform: scale(0.35);
+        width: 70px;
+        height: 70px;
+    }
+
+    .links{
+        position: fixed;
+        translate: -100% 0;
+        z-index: 3;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        transition: 0.5s all ease;
+        background-color: var(--negro);
+
+    }
+
+    .links ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 12px;
+        padding: 10px 0;
+        height: 120px;
+        width: 40%;
+        
+  
+    }
+
+    .links a{
+        color: white;
+        background-color: transparent;
+        border: none;
+    }
+
+    body.active .links {
+        translate: 0 0;
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+   
 }
+
 
 .conocimientos {
     display: flex;
@@ -376,3 +447,5 @@ section {
     font-size: 1.5rem;
     margin-top:20px;
 }
+
+/* Prueba de css */
