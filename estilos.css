@@ -380,7 +380,7 @@ section {
 
     .links{
         position: fixed;
-        translate: -100% 0;
+        transform: translate(-100% ,0);
         z-index: 3;
         top: 70px;
         left: 0;
@@ -411,7 +411,7 @@ section {
     }
 
     body.active .links {
-        translate: 0 0;
+        transform: translate(0 ,0);
         display: flex;
         height: auto;
         flex-direction: column;
