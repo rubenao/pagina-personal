@@ -367,6 +367,7 @@ section {
         object-fit: cover;
         background-position: 50% 50%;
         transform: scale(0.35);
+        -webkit-transform: scale(0.35);
         width: 70px;
         height: 70px;
         transition: 0.3s all ease;
