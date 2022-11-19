@@ -368,17 +368,12 @@ section {
         width: 70px;
         height: 70px;
         transition: 0.3s all ease;
+        -webkit-transition: 0.3s all ease;
     }
 
     body.active .hamburger {
         background-image: url('/Assets/Img/xmark-solid.svg');
-        background-repeat: no-repeat;
-        display: grid;
-        object-fit: cover;
-        background-position: 50% 50%;
-        transform: scale(0.35);
-        width: 70px;
-        height: 70px;
+
     }
 
     .links{
