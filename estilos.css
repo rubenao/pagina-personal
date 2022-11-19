@@ -361,6 +361,8 @@ section {
     .hamburger {
         background-image: url('/Assets/Img/bars-solid.svg');
         background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
         display: grid;
         object-fit: cover;
         background-position: 50% 50%;
