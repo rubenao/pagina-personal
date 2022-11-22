@@ -370,8 +370,8 @@ section {
         -webkit-transform: scale(0.35);
         width: 70px;
         height: 70px;
-        transition: 0.3s ease;
-        -webkit-transition: 0.3s ease;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
     }
 
     body.active .hamburger {
