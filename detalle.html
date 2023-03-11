@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del artículo</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="blog.css">
+    
+    
+    <link rel="shortcut icon" href="/Assets/Img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/brands.min.css" integrity="sha512-G/T7HQJXSeNV7mKMXeJKlYNJ0jrs8RsWzYG7rVACye+qrcUhEAYKYzaa+VFy6eFzM2+/JT1Q+eqBbZFSHmJQew==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+    <!--Navbar-->
+    <nav>
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Assets/Img/rubacademy-logos_transparent-croped.png" alt="logo" class="img-logo">
+                </a>
+            </div>
+
+            <div class="hamburger">
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="camino-emprendedor.html">Camino del emprendedor</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="herramientas.html">Herramientas</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="acerca-de-mi.html">Acerca de mi</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <!--Cuerpo del Blog-->
+    
+    <div class="contenedor-blog">
+        <img src="" alt="imagen" id="imagen">
+
+        <span id="fecha"></span>
+        <h1 id="titulo"></h1>
+        <div id="cuerpo"></div>
+
+        
+
+    </div>
+
+    <!--Ultimas publicaciones-->
+
+    <div class="contenedor-ultimas-publicaciones">
+        <h2>Sigue aprendiendo con nuestros últimos artículos</h2>
+
+        <div id="cards"></div>
+    </div>
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    
+  <script src="JS/index.js"></script>
+
+
+  <script>
+    const hamburger = document.querySelector('.hamburger')
+    
+
+    hamburger.addEventListener('click', ()=>{
+        document.body.classList.toggle('active')
+       
+
+    })
+    
+    </script>
+  
+</body>
+</html>
