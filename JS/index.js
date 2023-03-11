@@ -64,7 +64,7 @@ fetch('https://api.airtable.com/v0/apptYL9vRjll124bu/Blog' + query, {
     
   const currentDate = new Date().toISOString().split('T')[0];
   console.log(currentDate)
-  const url = `https://api.airtable.com/v0/apptYL9vRjll124bu/blog?filterByFormula={fecha_creacion}>='${currentDate}'&sort%5B0%5D%5Bfield%5D=fecha_creacion&sort%5B0%5D%5Bdirection%5D=desc&maxRecords=5`;
+  const url = `https://api.airtable.com/v0/apptYL9vRjll124bu/blog?filterByFormula={fecha_creacion}<='${currentDate}'&sort%5B0%5D%5Bfield%5D=fecha_creacion&sort%5B0%5D%5Bdirection%5D=desc&maxRecords=3`;
 
 fetch(url, {
   headers: {
