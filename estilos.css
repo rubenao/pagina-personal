@@ -689,3 +689,11 @@ section {
     margin-top: 100px;
   }
   
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.card-proyectos a h3{
+    text-decoration: none;
+  }
