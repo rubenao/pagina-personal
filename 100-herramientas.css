@@ -138,6 +138,7 @@ body {
   .img-descripcion {
     display: flex;
     width: 50%;
+    margin: 0 auto;
   }
 
   .img-descripcion img{
