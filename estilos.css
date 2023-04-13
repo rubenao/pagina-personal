@@ -326,6 +326,27 @@ section {
     color: white;
 }
 
+.encabezado {
+    max-width: 350px;
+    text-align: center;
+    margin-top: 100px !important;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+/*.gradiente-texto {
+
+    background: -webkit-linear-gradient(25deg,#57EBDE, #AEFB2A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
+
+}*/
+
+
+
+
 
 
 /* MEDIA QUERIES*/
@@ -685,9 +706,9 @@ section {
   /* Formulario */
 
 
-  .ml-embedded {
+ /* .ml-embedded {
     margin-top: 100px;
-  }
+  }*/
   
 a {
     text-decoration: none;
