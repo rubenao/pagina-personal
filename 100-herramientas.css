@@ -312,9 +312,9 @@ body {
 
   @media (max-width : 768px) {
 
-    .container {
-      /*margin-top: 70px;*/
-    }
+    /*.container {
+      margin-top: 70px;
+    }*/
 
     .descripcion h1, .descripcion-precio h1 {
       font-size: 28px;
