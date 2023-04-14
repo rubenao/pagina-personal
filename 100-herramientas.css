@@ -101,10 +101,10 @@ body {
   }
 
   .container{
-    margin-top: 150px;
+    /*margin-top: 150px;*/
     display: flex;
     justify-content: space-between;
-    padding: 30px 0;
+    /*padding: 30px 0;*/
   }
 
   .container-precio {
@@ -240,10 +240,10 @@ body {
     font-size: 25px;
   }
 
-  .section-hero {
+  /*.section-hero {
     margin-top: 150px;
 
-  }
+  }*/
 
   ul li {
     margin-left:20px;
@@ -313,7 +313,7 @@ body {
   @media (max-width : 768px) {
 
     .container {
-      margin-top: 70px;
+      /*margin-top: 70px;*/
     }
 
     .descripcion h1, .descripcion-precio h1 {
