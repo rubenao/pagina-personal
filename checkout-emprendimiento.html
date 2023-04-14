@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout emprendimiento digital </title>
+    <link rel="shortcut icon" href="/Assets/Img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="100-herramientas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="contador checkout">
+        <p>¡Oferta exclusiva del 60% 🔥! Esta oferta termina en:</p>
+        <div id="cuentaRegresiva"></div>
+        <!--<a href="#">Quiero la oferta🔥!</a>-->
+    </div>
+    <section class="checkout">
+
+        <div class="container-precio">
+            <div class="descripcion-precio">
+                <h1>Comprar Biblia de los emprendimientos digitales + kit +100 herramientas</h1>
+            </div>
+            <div class="img-descripcion">
+                <img src="Assets/Img/La biblia de los emprendimientos digitales WEB.png" alt="">
+            </div>
+            <div class="descripcion-precio">
+                <h2>Pagar</h3>
+                <h3 class="precio-1">
+                    $25
+                </h3>
+                <h3 class="precio-2">$15</h3>
+            </div>
+            <div id="smart-button-container">
+                <div style="text-align: center;">
+                  <div id="paypal-button-container"></div>
+                </div>
+            </div>
+    
+
+        </div>
+        
+    </section>
+    
+    <script src="https://www.paypal.com/sdk/js?client-id=AT1VLPwhDSV2RbomLkK18T-x0TXWFNk9oHL8UB2PFY8zOapBMn7FdMwtTC3zSdBxwfuskXkCLhjtTjna&enable-funding=venmo&currency=USD" data-sdk-integration-source="button-factory"></script>
+    <script>
+      function initPayPalButton() {
+        paypal.Buttons({
+          style: {
+            shape: 'rect',
+            color: 'gold',
+            layout: 'vertical',
+            label: 'paypal',
+            
+          },
+  
+          createOrder: function(data, actions) {
+            return actions.order.create({
+              purchase_units: [{"description":"Descripción del producto","amount":{"currency_code":"USD","value":15}}]
+            });
+          },
+  
+          onApprove: function(data, actions) {
+            return actions.order.capture().then(function(orderData) {
+              
+              // Full available details
+              console.log('Capture result', orderData, JSON.stringify(orderData, null, 2));
+  
+              // Show a success message within this page, e.g.
+              const element = document.getElementById('paypal-button-container');
+              element.innerHTML = '';
+              element.innerHTML = '<h3>Thank you for your payment!</h3>';
+  
+              // Or go to another URL:  actions.redirect('thank_you.html');
+              
+            });
+          },
+  
+          onError: function(err) {
+            console.log(err);
+          }
+        }).render('#paypal-button-container');
+      }
+      initPayPalButton();
+    </script>
+    <script src="100-herramientas.js"></script>
+</body>

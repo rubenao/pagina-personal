@@ -250,6 +250,11 @@ body {
     margin-top: 10px;
   }
 
+  .h1-atencion {
+    font-size: 42px;
+    color: rgb(233, 23, 23);
+  }
+
   
 
   
@@ -318,6 +323,10 @@ body {
 
     .descripcion h1, .descripcion-precio h1 {
       font-size: 28px;
+    }
+
+    h1 {
+      text-align: center;
     }
 
     h2 {
