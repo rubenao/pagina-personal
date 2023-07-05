@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            #progress-bar {
+            width: 150px;
+            background-color: #f2f2f2;
+            border-radius: 4px;
+            height: 5px;
+                }
+
+            #progress {
+            width: 0%;
+            height: 100%;
+            background-color: #4caf50;
+            border-radius: 4px;
+            }
+
+    </style>
+</head>
+<body>
+    <div id="progress-bar">
+        <div id="progress"></div>
+      </div>
+
+      <script>
+        // Función para actualizar la barra de progreso
+        function updateProgressBar(current, total) {
+            var progress = (current / total) * 100;
+            var progressBar = document.getElementById('progress');
+            progressBar.style.width = progress + '%';
+        }
+
+        // Ejemplo de uso
+        var palabrasConsumidas = 2000;
+        var totalPalabras = 4000;
+
+        updateProgressBar(palabrasConsumidas, totalPalabras);
+
+      </script>
+      
+</body>
+</html>
