@@ -26,7 +26,7 @@
             <div class="descripcion-precio">
                 <h2>Pagar</h3>
                 <h3 class="precio-2">
-                    $375
+                    $250
                 </h3>
                 
             </div>
@@ -55,7 +55,7 @@
   
           createOrder: function(data, actions) {
             return actions.order.create({
-              purchase_units: [{"description":"Descripción del producto","amount":{"currency_code":"USD","value":375}}]
+              purchase_units: [{"description":"Descripción del producto","amount":{"currency_code":"USD","value":250}}]
             });
           },
   
